@@ -10,7 +10,7 @@ const categoryRoutes=require('./routes/categoryRoute')
 const productRoutes=require('./routes/productRoutes')
 const cors=require('cors')
 dotenv.config();
-import {path} from 'path'
+import path from 'path'
 import {fileURLToPath} from 'url'
 
 const __filename = fileURLToPath(import.meta.url);
