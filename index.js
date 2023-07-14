@@ -10,11 +10,10 @@ const categoryRoutes=require('./routes/categoryRoute')
 const productRoutes=require('./routes/productRoutes')
 const cors=require('cors')
 dotenv.config();
-import path from 'path'
-import {fileURLToPath} from 'url'
+const  path= require('path')
 
-const __filename = fileURLToPath(import.meta.url);
- const __dirname = path.dirname(__filename);
+
+
 app.use(cors())
 app.use(bodyParser.json({limit:'50mb'}));
 app.use(bodyParser.urlencoded({extended: true}));
