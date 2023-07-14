@@ -11,9 +11,9 @@ const productRoutes=require('./routes/productRoutes')
 const cors=require('cors')
 dotenv.config();
 const path = require('path')
-const {fileURLToPath} = require('url')
+const {fileURLToPath} = require('node:url')
 
-var __filename = fileURLToPath('url');
+var __filename = fileURLToPath(import.meta.url);
 var __dirname = path.dirname(__filename);
 app.use(cors())
 app.use(bodyParser.json({limit:'50mb'}));
